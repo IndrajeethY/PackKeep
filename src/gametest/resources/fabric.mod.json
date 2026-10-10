@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "id": "packkeep-test",
+  "version": "1.0.0",
+  "name": "PackKeep Test",
+  "environment": "client",
+  "entrypoints": {
+    "fabric-client-gametest": [
+      "in.indrajeeth.packkeep.gametest.PackKeepClientGameTest"
+    ]
+  },
+  "depends": {
+    "packkeep": "*"
+  }
+}
