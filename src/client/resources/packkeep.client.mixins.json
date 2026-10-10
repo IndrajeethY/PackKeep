@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "package": "in.indrajeeth.packkeep.client.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "ClientCommonNetworkHandlerMixin",
+    "MinecraftClientMixin",
+    "ServerResourcePackLoaderMixin",
+    "ServerResourcePackManagerMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

@@ -1,0 +1,7 @@
+.gradle/
+build/
+versions/
+dist/
+run/
+.idea/
+*.classpath

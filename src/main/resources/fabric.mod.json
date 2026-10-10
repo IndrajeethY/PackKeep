@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "packkeep",
+  "version": "${version}",
+  "name": "PackKeep",
+  "description": "Keeps server resource packs resident across reconnects and skips the re-apply loading screen when the incoming pack hash is unchanged.",
+  "authors": [
+    "indrajeeth"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/packkeep/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "in.indrajeeth.packkeep.client.PackKeepClient"
+    ],
+    "modmenu": [
+      "in.indrajeeth.packkeep.client.ModMenuIntegration"
+    ]
+  },
+  "mixins": [
+    {
+      "config": "packkeep.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": ">=1.21 <1.22",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "modmenu": "*"
+  }
+}
